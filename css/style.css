@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#touch-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#counter {
+  font-size: clamp(6rem, 25vw, 20rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#contenedor-img {
+  width: 70%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: auto;
+  visibility: hidden;
+}
